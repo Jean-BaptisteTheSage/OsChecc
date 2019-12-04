@@ -1,0 +1,27 @@
+Knowledge Brown
+
+	The goal of my final project is to create a script that reads through a npm package.json file in order to check for dependencies that need to be
+updated. There are existing npm commands to run audits and fixes for dependencies however, these require a developer to read the warning messages or handle
+failure cases. If done properly one can write in npm wild cards to update to the latest stable version of a package but this approach doesn't account if the 
+latest package is compromised. This automation for package updating will differ by auditing all existing dependencies prior to executing a full production 
+build and on discovery of a new leak give the options of either aborting the build or automatically patching the update and triggering a new full build. This
+will be successful because working within a large code base is a complex task and by decreasing the number of tasks a developer has to focus on they will be 
+better suited to handling more pressing matters. In addition build automation is a skill that all web projects can make use of meaning the target audience is
+large. In terms of difficulty the only issue is ensuring that existing bulid configurations do not try to override any updates created by my script and that 
+the actual script is used. Since the desired implementation of my script would not allow for any building of any project with dependency issues if a 
+developer decided to just write in some override after my script has been run then the vulnerabilites will still persist. This is an important project 
+because many good projects are sabotaged by malicious third party libraries. Especially if the code base is a high scale code base generally build warnings 
+go unaddressed.By requiring developers to fix these bad libraries my project in essence fixes the leaks in the fortress. While this may not be a tool for the
+general public this would be a very good tool for any of the coding community to streamline the initial building and maintainence of a code base. The risks
+of this project is if implemented improperly it could possibly create build issues on what previously was a stable environment, misuse of the tool where an 
+auto update is run but the system could only run on a legacy version, and ensure that the script actually updates versions to stable conditions rather than 
+the latest. To mitigate these risks there are a couple of approaches: use existing frameworks such as Gulp.js which handle tying together existing build
+frameworks to a central point, do dependency checks within the script to ensure updating won't affect current functionality, and use existing npm
+functionality. Thankfully for this project all the frameworks are part of the open source community so the only cost for this project is time. The existing
+frameworks are easily available through npm, yarn, or for some features even pip installer. To define a good time box for this project first it has to be 
+divided into parts. The first issue is to ensure that automating all the build parts doesn't affect existing conditions which shouldn't take more than a week
+of work. The second issue is more involved, addressing the issue of updating dependencies affecting legacy code. Because this invloves parsing existing text
+tokens from the files and comparing them against deprecated calls or using existing dependcy checkers that I don't know well. Since this invloves new
+frameworks this will take longer for somewhere between two to two and a half weeks. The last goal is to wrap all this functionality into a single efficient
+script. This should take at most up to a week since all the hard code is written and making it a single function is straight forward. All these times add up 
+for a total time of about four weeks. For a good mid-term ensuring that my scripts can execute other build and run commands, while also having  

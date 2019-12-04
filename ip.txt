@@ -1,0 +1,28 @@
+# Nmap 7.80 scan initiated Wed Dec 04 12:08:03 2019 as: nmap -oX - -O -oN ip.txt localhost
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00019s latency).
+Other addresses for localhost (not scanned): ::1
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+1309/tcp open  jtag-server
+8888/tcp open  sun-answerbook
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=12/4%OT=135%CT=1%CU=39149%PV=N%DS=0%DC=L%G=Y%TM=5DE7F6
+OS:14%P=i686-pc-windows-windows)SEQ(SP=108%GCD=1%ISR=10C%TI=I%CI=I%II=I%TS=
+OS:U)OPS(O1=MFFD7NW8NNS%O2=MFFD7NW8NNS%O3=MFFD7NW8%O4=MFFD7NW8NNS%O5=MFFD7N
+OS:W8NNS%O6=MFFD7NNS)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FF70)EC
+OS:N(R=Y%DF=Y%T=80%W=FFFF%O=MFFD7NW8NNS%CC=N%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F
+OS:=AS%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=8
+OS:0%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q
+OS:=)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A
+OS:%A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y
+OS:%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=Z%RUCK=G%RUD=G)IE(R=Y%DFI=N%T
+OS:=80%CD=Z)
+
+Network Distance: 0 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Dec 04 12:08:20 2019 -- 1 IP address (1 host up) scanned in 17.92 seconds
